@@ -10,7 +10,7 @@
     "express": "^4.17.1"
   },
   "engines": {
-    "node": "8.x.x"
+    "node": "12.x.x"
   },
   "devDependencies": {},
   "repository": {
