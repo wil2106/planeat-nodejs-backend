@@ -4,7 +4,8 @@
   "description": "Planeat backend",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -12,7 +13,10 @@
   "engines": {
     "node": "12.x.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wil2106/planeat-nodejs-backend.git"
