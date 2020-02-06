@@ -2,9 +2,9 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['config set user 0']
+  args: ['config','set','user','0']
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['config set unsafe-perm true']
+  args: ['npm','config','set','unsafe-perm','true']
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
 - name: "gcr.io/cloud-builders/gcloud"
