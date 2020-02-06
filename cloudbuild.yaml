@@ -4,7 +4,7 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['config','set','user','0']
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['npm','set','unsafe-perm','true']
+  args: ['config','set','unsafe-perm','true']
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
 - name: "gcr.io/cloud-builders/gcloud"
