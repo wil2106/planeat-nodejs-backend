@@ -1,8 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['chmod','+rwx','./node_modules/.bin/jest']
+- name: 'chmod'
+  args: ['+rwx','./node_modules/.bin/jest']
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
 - name: "gcr.io/cloud-builders/gcloud"
