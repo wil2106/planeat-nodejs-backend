@@ -15,8 +15,9 @@ con.connect(function(err) {
   console.log("Connected!");
 });
 */
+
 app.get('/', (req, res) => {
-  res.status(200).send('salut').end();
+  res.status(200).send('Bonjour').end();
 });
 
 module.exports = app
