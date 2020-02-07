@@ -3,7 +3,6 @@ var mysql = require('mysql');
 
 const app = express();
 
-
 let pool;
 const createPool = async () => {
   pool = await mysql.createPool({
@@ -13,15 +12,9 @@ const createPool = async () => {
     socketPath: `/cloudsql/${process.env.CLOUD_SQL_CONNECTION_NAME}`
   });
 };
+
 createPool();
 
-var test = function(req, res) {
-  pool.getConnection(function(err, conn){
-      conn.query("select * from Recipes", function(err, rows) {
-           res.json(rows);
-      })
-  })
-}
 
 
 
