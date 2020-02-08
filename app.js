@@ -13,11 +13,12 @@ const createPool = async () => {
     database: process.env.DB_NAME, // e.g. 'my-database'
     socketPath: `/cloudsql/${process.env.CLOUD_SQL_CONNECTION_NAME}`
   });
+  console.log(pool);
 };
 
 createPool();
 
-console.log(pool);
+
 
 
 
