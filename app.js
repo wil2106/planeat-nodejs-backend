@@ -57,7 +57,7 @@ createPool();
 
 app.get('/', (req, res) => {
   handle_database(req,res);
-  res.status(200).send('Bonjour').end();
+  //res.status(200).send('Bonjour').end();
 });
 
 module.exports = app
