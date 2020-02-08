@@ -17,6 +17,8 @@ const createPool = async () => {
 
 createPool();
 
+console.log(pool);
+
 
 
 
