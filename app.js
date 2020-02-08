@@ -3,8 +3,6 @@ var mysql = require('mysql');
 
 const app = express();
 
-console.log(process.env.DB_NAME);
-
 let pool;
 const createPool = async () => {
   pool = await mysql.createPool({
